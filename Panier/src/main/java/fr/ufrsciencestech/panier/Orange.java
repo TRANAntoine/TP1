@@ -28,6 +28,7 @@ package fr.ufrsciencestech.panier;
         if (p < 0){
             
             this.prix = 0;
+            
         }
         else{
             

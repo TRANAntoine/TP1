@@ -34,6 +34,11 @@ public class Panier {
         return this.nbOrange;
     }
     
+    public Orange getOrange(int i)
+    {
+        return this.panier.get(i-1);
+        
+    }
   
     
     public boolean estPlein()
@@ -105,7 +110,7 @@ public class Panier {
         
         if(!this.estVide() && nbOrange > 0)
         {
-            this.panier.remove(nbOrange);
+            this.panier.remove(nbOrange-1);
             nbOrange--;
         }
         

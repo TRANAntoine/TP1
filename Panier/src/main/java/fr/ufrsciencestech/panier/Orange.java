@@ -39,6 +39,14 @@ package fr.ufrsciencestech.panier;
         
     }
     
+    public Orange(Orange o)
+    {
+        this.prix = o.prix;
+        this.origine = o.origine;
+        
+        
+    }
+    
     public int getPrix(){
         
         return this.prix;
